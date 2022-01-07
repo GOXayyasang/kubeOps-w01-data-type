@@ -2,6 +2,7 @@ use std::io;
 
 fn main() {
     let mut input = String::new();
+    println!("Please input your Palindrome: ");
     io::stdin().read_line(&mut input).unwrap();
     if is_palindrome(input.trim().to_string()) {
         println!("{} is palindrome",input);
